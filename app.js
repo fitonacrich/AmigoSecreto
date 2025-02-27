@@ -12,7 +12,6 @@ function agregarAmigo() {
         lAmigos.push(ingresaAmigos);
     }
     limpiar();
-    console.log(lAmigos);
 }
 
 function limpiar() {
@@ -38,4 +37,17 @@ function sortearAmigo() {
     const resultadoElement = document.getElementById('resultado');
     resultadoElement.innerHTML = `¡Tu amigo secreto es: ${amigoSorteado}!`;
 
+}
+
+function borrarTodo(){
+  lAmigos = []
+  const lista = document.getElementById('listaAmigos');
+    while (lista.firstChild) {
+        lista.removeChild(lista.firstChild);
+    }
+    const lista2 = document.getElementById('resultado');
+    while (lista2.firstChild) {
+        lista2.removeChild(lista2.firstChild);
+    }
+    limpiar();
 }

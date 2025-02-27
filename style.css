@@ -88,7 +88,9 @@ body {
 }
 
 .button-container {
-    width: 300px;
+    display: flex;
+
+    width: 500px;
     justify-content: center;
 }
 
@@ -147,7 +149,7 @@ ul {
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 10px 40px;
+    padding: 10px 15px;
     color: var(--color-white);
     background-color: var(--color-button);
     font-size: 16px;
@@ -160,3 +162,4 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+
